@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import Button from "./Button";
 //import pages
 import About from "../pages/About";
 import Products from "../pages/Products";
@@ -18,7 +19,7 @@ export default function NavBar(){
                         <NavLink to="/products"> OUR PRODUCTS </NavLink>
                     </li>
                 </ul>
-                <button>BUDGET MODE</button>
+                <Button />
             </nav>
         </header>
     )
