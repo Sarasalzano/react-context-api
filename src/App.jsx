@@ -5,6 +5,8 @@ import Layout from './components/Layout';
 import About from './pages/About';
 import Products from './pages/Products';
 import ProductsDetail from './pages/ProductsDetail';
+import {BudgetProvider, BudgetContext} from "./contexts/BudgetContext";
+
 
 function App() {
   return (
