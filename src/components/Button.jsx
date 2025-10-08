@@ -10,7 +10,7 @@ return(
     //al click invertiamo il valore di budgetMode
     <button onClick={()=>setBudgetMode(!budgetMode)}>
         {/* modifica testo bottone a seconda dello stato true o false del budgetmode */}
-        {budgetMode ? "DEACTIVATE BUDGET MODE" : "ACTIVATE BUDGETMODE"}
+        {budgetMode ? "BUDGETMODE OFF" : "BUDGETMODE ON"}
     </button>
 );
 }

@@ -52,7 +52,7 @@ a {
 
 ul a {
     margin-right: 20px;
-    font-family: 1.5rem;
+    font-size: 1.1rem;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
@@ -63,6 +63,13 @@ header {
     height: 70px;
     padding-top: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 a.active {
@@ -111,7 +118,7 @@ p, span {
     width: 90%;
     margin: 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -214,3 +221,20 @@ span {
     font-size: 1.2rem;
 }
 
+/* BUTTON */
+button {
+    display: block;
+    margin-left: 20px;
+    background-color: #09bcc9;
+    box-shadow: 0 0 15px #09bcc9;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 15px;
+    border: currentColor;
+    font-size: 1.1rem;  
+}
+
+button:hover {
+ box-shadow: 0 0 20px #09bcc9;
+ cursor: pointer; 
+}

@@ -22,7 +22,7 @@ export default function Products(){
     return(
         <div className="products-container">
             <div className="row">
-                // Se budgetMode è attivo, includi solo i prodotti con prezzo minore o uguale a 30
+                {/* Se budgetMode è attivo, includi solo i prodotti con prezzo minore o uguale a 30 */}
                 {products.filter(product => budgetMode ? product.price <= 30 : true )
                 //mappa i prodotti dopo aver applicato il filter sull'array
                 .map((product) => (
