@@ -18,6 +18,7 @@ export default function NavBar(){
                         <NavLink to="/products"> OUR PRODUCTS </NavLink>
                     </li>
                 </ul>
+                <button>BUDGET MODE</button>
             </nav>
         </header>
     )
