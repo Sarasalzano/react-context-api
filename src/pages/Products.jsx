@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import { useContext } from "react";
+import BudgetContext from "../contexts/BudgetContext";
 
 
 export default function Products(){
@@ -13,10 +15,17 @@ export default function Products(){
             .catch(err => console.log(err));
         }, []);
 
+    //prendi lo stato budgetMode e la funzione per aggiornarlo
+    const {budgetMode, setBudgetMode} = useContext(BudgetContext);
+
+
     return(
         <div className="products-container">
             <div className="row">
-                {products.map((product) => (
+                // Se budgetMode è attivo, includi solo i prodotti con prezzo minore o uguale a 30
+                {products.filter(product => budgetMode ? product.price <= 30 : true )
+                //mappa i prodotti dopo aver applicato il filter sull'array
+                .map((product) => (
                 <div key={product.id} className="column">          
                     <div  className="img-wrapper">
                         <img src={product.image} alt={product.title} />

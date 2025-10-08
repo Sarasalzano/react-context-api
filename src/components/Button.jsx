@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { BudgetContext } from "../contexts/BudgetContext";
+import BudgetContext from "../contexts/BudgetContext";
 
 
 export default function Button(){
